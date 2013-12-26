@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Method definition
+# key: meth
+# --
+/**
+ * $5
+ */
+${3:$$(yas-choose-value '("@NotNull\n" "@Nullable\n" ""))} ${2:$$(yas-choose-value '("public " "protected " "private "))} void ${1:name}($4) {
+  $0
+}
