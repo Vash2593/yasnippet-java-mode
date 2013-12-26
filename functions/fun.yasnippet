@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Function definition
+# key: fun
+# --
+/**
+ * $6
+ */
+${4:$$(yas-choose-value '("@NotNull\n" "@Nullable\n" ""))} ${3:$$(yas-choose-value '("public " "protected " "private "))} ${2:int} ${1:name}($5) {
+  $0
+}
